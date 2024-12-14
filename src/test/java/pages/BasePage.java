@@ -13,4 +13,16 @@ public class BasePage {
     public void clickOneElement(By locator){
         getElement(locator).click();
     }
+
+    public void writeOneElement(By locator, String text){
+        getElement(locator).sendKeys(text);
+    }
+
+    public void loadAnWebPage(String url){
+        getDriver().get(url);
+    }
+
+    public String getPageTitle(){
+        return getDriver().getTitle();
+    }
 }
