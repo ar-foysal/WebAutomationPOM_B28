@@ -3,13 +3,14 @@ package pages;
 import org.openqa.selenium.By;
 
 public class HomePage extends BasePage{
-    public String home_page_url = "https://www.opencart.com/index.php?route=common/home";
-    public String home_page_title = "OpenCart - Open Source Shopping Cart Solution";
-    public By loginButton = By.xpath("//a[@class='btn btn-link navbar-btn']");
+    public String url = "https://automationexercise.com";
+    public String title = "Automation Exercise";
+    public By login_signup = By.xpath("//a[normalize-space()='Signup / Login']");
+    public By logout_btn = By.xpath("//a[normalize-space()='Logout']");
 
-
-
-
+    public void loadHomePage(){
+        loadAWebPage(url);
+    }
 
 
 }

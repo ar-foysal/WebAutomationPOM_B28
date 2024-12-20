@@ -13,7 +13,7 @@ public class AccountPage extends BasePage{
 
     public void doLogout(){
         if (getElement(logout_btn).isDisplayed()){
-            clickOneElement(logout_btn);
+            clickOnElement(logout_btn);
         }
     }
 
